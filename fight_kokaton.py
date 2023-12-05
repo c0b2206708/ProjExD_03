@@ -185,7 +185,7 @@ def main():
                     bird.change_img(6, screen)
         # Noneでない爆弾だけのリストを作る
         bombs = [bomb for bomb in bombs if bomb is not None]
-        # Noneでないビームだけのリストを作る
+        # Noneでなく、画面内にあるビームだけのリストを作る
         beams = [beam for beam in beams if beam is not None and beam.rct.centerx < WIDTH]
 
         key_lst = pg.key.get_pressed()
